@@ -1,0 +1,14 @@
+echo "Misc"
+ ifconfig
+# Finding my IP address using CLI
+
+ nslookup google.com
+# Fetching the ip address of google which is 142.250.192.78
+
+ nm-online
+# Checking the connectivity of the internet
+
+  whereis node
+  whereis code
+# Finding the location of node and code using whereis command
+  history
