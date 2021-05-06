@@ -1,0 +1,41 @@
+echo "Processing & ports"
+  pidof firefox 
+# Displaying the browser’s(firefox) process id
+  
+  ps
+ # Fetching the parent process ids
+
+   killall firefox
+ # Clossing the Browsing application which is firefox
+
+    ps -eo %cpu --sort=-%cpu | head -4
+ # Listing  the top 3 processes by CPU usage
+
+
+  ps -eo %mem --sort=-%mem | head -4
+# Displaying the top 3 processes by memory usage 
+
+  python3 –version
+  sudo apt update
+  sudo apt install software-properties-common
+  sudo add-apt-repository ppa:deadsnakes/ppa
+  sudo apt update
+  sudo apt install python3.8
+  python3 –version
+# While checking the version of python i realized python was not there in my system that is why
+   i installed the python version 3.8 and then resume the further task
+
+   sudo python3 -m http.server
+# Starting a Python HTTP server on port 8000 and copy the link in the browser 
+
+  sudo pkill python3
+  sudo python3 -m http.server 90
+# After  opening another tab i stopped the process i started in the previous step and changed the port from 8000 to 90
+
+  sudo ss -tulpn
+# Displaying all active connections and the corresponding TCP / UDP ports.
+  
+  ss -ltnup 'sport = :5432'
+# Found pid of the process that is listening on port 5432
+
+   history
