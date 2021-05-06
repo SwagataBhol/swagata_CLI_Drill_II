@@ -1,0 +1,41 @@
+echo "Managing Software"
+
+  sudo apt update
+  sudo apt upgrade
+# Update and upgrading sudo
+
+  apt install htop
+  apt-cache search htop
+  sudo apt install htop
+  htop --version
+  sudo snap install htop
+  htop –version
+# Installing htop (7-12)
+
+  sudo apt-get clean
+  sudo apt update
+  sudo apt upgrade
+  sudo apt search vim
+  apt show vim-tiny
+  apt show vim
+  sudo apt-get update
+  sudo apt-get install vim
+  vim --version
+  history
+# Installing vim (18-22)
+
+  sudo apt update
+  sudo apt install nginx
+  sudo ufw app list
+  sudo ufw allow 'Nginx HTTP'
+  sudo ufw status
+  sudo ufw enable
+  sudo ufw status
+  systemctl status nginx
+  sudo apt install curl
+  curl -4 icanhazip.com
+# Installin nginx and checking it in server using curl (28-36)
+
+  sudo apt purge nginx
+  history
+# Uninstalling nginx
