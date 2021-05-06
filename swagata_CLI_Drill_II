@@ -1,0 +1,35 @@
+  echo "Piping"
+  wget https://raw.githubusercontent.com/bobdeng/owlreader/master/ERead/assets/books/Harry%20Potter%20and%20the%20Goblet%20of%20Fire.txt
+
+# In the above step i have saved the file named “Harry Potter and the Goblet of Fire.txt” by using wget command and the url of the file from the internet.
+
+  
+  ls        
+ # Checking whether the file have saved or not
+
+  mv 'Harry Potter and the Goblet of Fire.txt' Harry.txt    
+# As the file name is huge i renamed it as “Harry.txt” using the command mv
+
+  head -3 Harry.txt
+# Displaying the 1st three line of the file 
+
+  tail -10 Harry.txt
+#  Print the last 10 line of the file Harry.txt
+
+  grep -o -i Harry Harry.txt | wc -l
+# Count the frequency of the word “Harry” from the file 
+
+  grep -o -i Ron Harry.txt | wc -l
+  grep -o -i Hermione Harry.txt | wc -l
+  grep -o -i Dumbledore Harry.txt | wc -l
+# Finding the number of occurence  of Ron,Hermione and Dumbledore as well 
+
+  
+  head -200 Harry.txt | tail -101
+# Fetching  the lines from 100 to 200 from the file
+
+  
+  sort -u Harry.txt | wc -l
+#  Getting the frequency of Unique words from the file Harry.txt
+
+  history
